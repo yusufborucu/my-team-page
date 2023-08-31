@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 10rem;
+}
+
+header h1 {
+  color: #000;
+  font-family: PT Serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1.62px;
+  flex: 1;
+}
+
+header .description {
+  flex: 1;
+}
+
+header .description h4 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+header .description p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  width: 440px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5rem 10rem;
+}
+
+.container .item {
+  display: flex;
+  position: relative;
+}
+
+.container .item:nth-child(2),.item:nth-child(5) {
+  margin-top: 5rem;
+}
+
+.container .item .profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .item .profile img {
+  width: 238px;
+  height: 341px;
+}
+
+.container .item .profile span {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.container .item .profile-title {
+  color: #000;
+  font-family: PT Serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  margin-left: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  margin-bottom: .5rem;
+  margin-top: auto;
+}
+
+footer span {
+  color: #A9A9A9;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    margin: 2rem 0 1rem 1rem;
+  }
+
+  header h1 {
+    margin-bottom: 1rem;
+  }
+}
